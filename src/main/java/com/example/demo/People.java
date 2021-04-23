@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public abstract class People<PersonType extends Person> implements Iterable<PersonType>{
-    List<PersonType> peeples= new ArrayList<PersonType>();
+    private List<PersonType> peeples;
 
     public People(PersonType ...peeps){
         this.peeples= Arrays.asList(peeps);
@@ -30,6 +30,10 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
         return null;}
 
     public List<PersonType> findAll(){return peeples;}
+
+    public Iterator<PersonType> iterator() {
+        return peeples.listIterator();
+    }
 }
 /*
 

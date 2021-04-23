@@ -2,7 +2,7 @@ package com.example.demo;
 
 public class Instructor extends Person implements Teacher {
 
-    public Instructor(long i, String n, double h){
+    public Instructor(long i, String n){
         super(i, n);
     }
     public void teach(Learner learner, double numberOfHours){learner.learn(numberOfHours);}

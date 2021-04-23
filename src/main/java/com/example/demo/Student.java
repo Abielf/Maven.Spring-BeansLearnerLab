@@ -3,7 +3,7 @@ package com.example.demo;
 public class Student extends Person implements Learner{
     private double totalStudyTime=0;
 
-    public Student(long i, String n, double h){
+    public Student(long i, String n){
         super(i, n);
     }
 

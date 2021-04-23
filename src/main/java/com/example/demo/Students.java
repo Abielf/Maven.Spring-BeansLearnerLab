@@ -1,4 +1,9 @@
 package com.example.demo;
 
-public class Students {
+import java.util.Iterator;
+
+public class Students extends People<Student>{
+
+    public Students(Student ...cohort){super(cohort);}
+
 }
