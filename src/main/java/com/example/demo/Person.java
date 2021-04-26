@@ -21,4 +21,7 @@ public class Person {
     public long getId() {
         return id;
     }
+
+    @Override
+    public String toString(){return "My name is "+name+" and my ID is "+id+"\n";}
 }

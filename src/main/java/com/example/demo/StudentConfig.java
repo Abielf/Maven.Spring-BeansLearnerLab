@@ -29,7 +29,7 @@ public class StudentConfig {
     @Bean
     public Students previousStudents(){
         return new Students(
-                new Student(1,"Evan hitchings"),
+                new Student(1,"Evan Hitchings"),
                 new Student(2, "Jim Coats"),
                 new Student(3, "Brian Patterson"),
                 new Student(4, "Some guy"),

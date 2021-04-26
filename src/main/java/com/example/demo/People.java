@@ -34,6 +34,14 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
     public Iterator<PersonType> iterator() {
         return peeples.listIterator();
     }
+
+    @Override
+    public String toString(){
+        Iterator<PersonType> group= iterator();
+        String rollCall="";
+        while(group.hasNext()){rollCall+=group.next().toString();}
+        return rollCall;
+    }
 }
 /*
 

@@ -10,12 +10,12 @@ public class ClassroomConfig {
 
     @Bean
     @DependsOn({"instructors", "students"})
-    public Classroom currentCohort( Instructors t, @Qualifier("students")Students s){
+    public Classroom currentCohort( @Qualifier("instructors")Instructors t, @Qualifier("students")Students s){
         return new Classroom(s,t);
     }
 
     @Bean
-    public Classroom previousCohort(Instructors t, @Qualifier("previousStudents") Students s){
+    public Classroom previousCohort(@Qualifier("instructors") Instructors t, @Qualifier("previousStudents") Students s){
         return new Classroom(s,t);
     }
 

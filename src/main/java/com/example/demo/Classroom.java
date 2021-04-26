@@ -24,4 +24,11 @@ public class Classroom {
     public Students getCohort() {
         return cohort;
     }
+
+    @Override
+    public String toString(){
+        String full=zipsters.toString();
+        full+=cohort.toString();
+        return full;
+    }
 }
